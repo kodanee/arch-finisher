@@ -8,9 +8,5 @@ then
 
 **Any feedback would be appreciated!**
 
-*Includes:
-Audio - alsa, pipewire...
-Bluetooth - bluez..
-Power management - power-profiles-daemon
-(Optional) Firewall - ufw (you will be asked if you want it or not)
-(Optional) Fastfetch - if you want to flex that arch.*
+*Includes functionality of:
+Audio, bluetooth, network, power profile OPTIONAL firewall and fastfetch to flex that arch*
