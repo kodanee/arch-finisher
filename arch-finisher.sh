@@ -18,15 +18,16 @@ sudo pacman -S --noconfirm --needed alsa-utils pipewire wireplumber
 
 echo -e "${CYAN}Bluetooth...${WHITE}"
 sudo pacman -S --noconfirm --needed bluez bluez-utils bluez-deprecated-tools
-
-echo -e "${CYAN}Enabling bluetooth service...${WHITE}"
 sudo systemctl enable --now bluetooth.service
 
 echo -e "${CYAN}Power management...${WHITE}"
 sudo pacman -S --noconfirm --needed power-profiles-daemon
-
-echo -e "${CYAN}Enabling power management service...${WHITE}"
 sudo systemctl enable --now power-profiles-daemon
+
+echo -e "${CYAN}Network manager...${WHITE}"
+sudo pacman -S --noconfirm --needed networkmanager
+sudo pacman -S --noconfirm --needed wpa_supplicant
+sudo systemctl enable --now NetworkManager
 
 echo -e "${CYAN}Do you want firewall? Y/N${WHITE}"
 sudo pacman -S ufw
