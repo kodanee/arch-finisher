@@ -8,5 +8,6 @@ then
 
 **Any feedback would be appreciated!**
 
-*Includes functionality of:
-Audio, bluetooth, network, power profile OPTIONAL firewall and fastfetch to flex that arch*
+*Includes functionality of:*
+*Audio, bluetooth, network, power profile.*
+*OPTIONAL: firewall and fastfetch to flex that arch*
