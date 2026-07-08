@@ -25,8 +25,7 @@ sudo pacman -S --noconfirm --needed power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon
 
 echo -e "${CYAN}Network manager...${WHITE}"
-sudo pacman -S --noconfirm --needed networkmanager
-sudo pacman -S --noconfirm --needed wpa_supplicant
+sudo pacman -S --noconfirm --needed networkmanager wpa_supplicant iwd linux-firmware
 sudo systemctl enable --now NetworkManager
 
 echo -e "${CYAN}Do you want firewall? Y/N${WHITE}"
